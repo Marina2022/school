@@ -1,0 +1,135 @@
+.page--about {
+  overflow-y: hidden;
+}
+
+.header__list__nav li:nth-child(1) {
+  margin-left: 0;
+}
+
+.no-style {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.title-block {
+  display: inline-block;
+  font-family: "Times New Roman", serif;
+  font-size: 1.55vw;
+  padding: 0.5vw 1.4vw 0.7vw 0.6vw;
+  background-color: #908a8a;
+  margin-bottom: 0.8%;
+
+  @media (max-width: 897px) {
+    margin-top: 3px;
+    padding: 1.2vw 2.7vw 1vw 2.2vw;
+    letter-spacing: 1.6px;
+    font-size: 2.55vw;
+    margin-bottom: 3.5%;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0.2vw 2.7vw 1vw 2.2vw;
+    margin-top: 5vw;
+    font-size: 4vw;
+    margin-bottom: 1%;
+  }
+}
+
+ol {
+  color: #344760;
+  @media (max-width: 500px) {
+    margin-bottom: 2vw;
+  }
+
+  li {
+    letter-spacing: 0.7px;
+    margin-top: 0;
+    color: #344760;
+    font-size: 1.8vw;
+    line-height: 2.3vw;
+    @media (max-width: 897px) {
+      letter-spacing: 0.2px;
+      line-height: 2.9vw;
+    }
+    @media (max-width: 500px) {
+      line-height: 4.7vw;
+      font-size: 3.8vw;
+      line-height: 4.3vw;
+      letter-spacing: -0.1px;
+      margin-bottom: 1.8vw;
+    }
+  }
+}
+
+.sublist {
+  margin-top: 0vw;
+  padding-left: 2vw;
+  @media (max-width: 500px) {
+    padding-left: 5vw;
+  }
+}
+
+.highlighted-text {
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 1.9% 1.5%;
+  letter-spacing: 1px;
+  color: #344760;
+  font-size: 1.8vw;
+  line-height: 2.6vw;
+
+  @media (max-width: 500px) {
+    font-size: 3.8vw;
+    line-height: 4.3vw;
+    letter-spacing: -0.1px;
+    margin-bottom: 1.8vw;
+  }
+}
+
+
+.ps__thumb-y {
+  width: 1.3vw;
+  background-color: rgb(255, 255, 255, 0.3) !important;
+  @media (max-width: 897px) {
+    display: none;
+  }
+  &:focus, &:hover {
+    width: 1.3vw;
+    background-color: rgb(255, 255, 255, 0.3) !important;
+  }
+}
+
+.ps .ps__rail-y {
+  @media (max-width: 897px) {
+    display: none;
+  }
+
+  &:hover > .ps__thumb-y {
+    width: 1.3vw;
+    background-color: rgb(255, 255, 255, 0.3);
+  }
+
+  &:focus, .ps__rail-y:hover {
+    background-color: transparent;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.ps .ps__rail-y.ps--clicking {
+  background-color: transparent;
+  @media (max-width: 897px) {
+    display: none;
+  }
+}
+
+.ps__rail-y.ps--clicking .ps__thumb-y {
+  width: 1.3vw;
+  @media (max-width: 897px) {
+    display: none;
+  }
+}
+

@@ -1,0 +1,123 @@
+.my-plans {
+  background-color: #dfe3f0;
+  padding: 28px 0 45px;
+  color: #1d2e5b;
+  @include t {
+    padding: 57px 35px 65px;
+  }
+}
+
+.my-plans__title {
+  margin-bottom: 26px;
+  @include t {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 48px;
+  }
+}
+
+.my-plans__list {
+}
+
+.plans-item {
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 24px 25px 23px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  @include t {
+    width: 618px;
+    padding: 40px 43px 0 40px;
+    &:before {
+      content: "";
+      position: absolute;
+      background-color: rgb(#cbced9, 0.3);
+      height: 1px;
+      bottom: 55px;
+      left: 0;
+      width: 100%;
+    }
+  }
+  @include d {
+    width: 1258px;
+    margin-left: 20px;
+    padding: 36px 42px 36px 43px;
+    display: flex;
+    margin-bottom: 15px;
+    &:before {
+      height: 0;
+    }
+  }
+}
+.plans-item__header {
+  margin-bottom: 20px;
+  @include t {
+    margin-bottom: 54px;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @include d {
+    width: 624px;
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+}
+.plans-item__title {
+  font-weight: bold;
+  @include t {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.plans-item__number {
+  @include d {
+    order: -1;
+    margin-right: 36px;
+  }
+}
+
+.plans-item__content {
+  flex-grow: 1;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  @include t {
+    font-size: 20px;
+    line-height: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.plans-item__companions-number {
+  margin-bottom: 5px;
+  @include d {
+    width: 177px;
+    margin-bottom: 0;
+  }
+}
+
+.plans-item__dates {
+  margin-bottom: 24px;
+  @include t {
+    margin-bottom: 18px;
+  }
+  @include d {
+    margin-bottom: 0;
+  }
+}
+
+.plans-item__change-link {
+  color: #000000;
+  opacity: 0.3;
+  text-decoration: none;
+}

@@ -1,0 +1,24 @@
+@import "global/variables";
+@import "global/mixins";
+@import "global/fonts";
+@import "global/global";
+
+@import "blocks/0_auth_button";
+@import "blocks/1_page-header";
+@import "blocks/2_intro";
+@import "blocks/3_steps";
+@import "blocks/4_about";
+@import "blocks/5_directions";
+@import "blocks/6_companions";
+@import "blocks/7_profile";
+@import "blocks/8_interested";
+@import "blocks/9_address";
+@import "blocks/10_main-footer";
+@import "blocks/11_tariffs-modal";
+@import "blocks/12_page-title-container";
+@import "blocks/13_form-profile";
+@import "blocks/14_my-plans";
+@import "blocks/15_add-plan";
+@import "blocks/16_form-popup.scss";
+@import "blocks/17_country-filter";
+@import "blocks/18_catalog";

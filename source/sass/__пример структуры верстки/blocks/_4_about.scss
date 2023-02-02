@@ -1,0 +1,94 @@
+.about {
+  padding: 33px 0 82px;
+  min-height: 353px; // потом убрать надо
+  background: $main-back url("../img/bg/about-mobile.png") center bottom
+    no-repeat;
+  @media (min-width: $tablet) {
+    padding-bottom: 90px;
+
+    background: $blue url("../img/bg/about-tablet-bg.png") center top no-repeat;
+  }
+  @media (min-width: $desktop) {
+    padding-bottom: 0;
+    padding-top: 0;
+    background: $blue url("../img/bg/about-desktop-bg.png") left 60px top
+      no-repeat;
+  }
+}
+
+.about__text {
+  margin-bottom: 20px;
+  @media (min-width: $tablet) {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 31px;
+    padding-left: 34px;
+    min-width: 330px;
+  }
+  @media (min-width: $desktop) {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 38px;
+  }
+}
+.about__prompt {
+  font-weight: bold;
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 52px;
+    padding-left: 34px;
+  }
+  @media (min-width: $desktop) {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 85px;
+  }
+}
+
+.about__button {
+  display: none;
+  @media (min-width: $tablet) {
+    display: block;
+    width: 276px;
+    margin-left: 36px;
+  }
+}
+
+.about__img {
+  display: none;
+  @media (min-width: $tablet) {
+    display: block;
+    padding-top: 10px;
+    padding-left: 36px;
+    width: 376px;
+  }
+  @media (min-width: $desktop) {
+    padding-top: 10px;
+    width: auto;
+  }
+}
+
+.about__wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.about__title {
+  padding-left: 36px;
+  @media (min-width: $tablet) {
+    margin-bottom: 40px;
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 57px;
+    padding-top: 62px;
+  }
+}
+
+.about__left-wrapper {
+  @include t {
+    max-width: 620px;
+  }
+}

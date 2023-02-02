@@ -1,0 +1,76 @@
+.tariffs-modal {
+  z-index: 10;
+  color: $grey-text;
+  padding-top: 34px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 270px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: none;
+  &--open {
+    display: block;
+  }
+  @include t {
+    width: 688px;
+    padding-top: 54px;
+  }
+}
+
+.modal__title {
+  padding: 0 25px;
+  margin-bottom: 28px;
+  @include t {
+    padding: 0 93px;
+  }
+}
+
+.modal-tariffs__list {
+  padding: 0 25px;
+  margin-bottom: 34px;
+  @include t {
+    padding: 0 93px;
+    margin-bottom: 52px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+.modal-tariffs__item {
+  padding: 11px 0;
+  border-bottom: 1px solid rgb(#000000, 0.05);
+  &:first-child {
+    border-top: 1px solid rgb(#000000, 0.05);
+  }
+  @include t {
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.tarriffs__close-button {
+  padding: 21px 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  background-color: #f3f4f8;
+  text-align: center;
+  width: 100%;
+  border: none;
+  outline: none;
+
+  @include t {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 41px 0;
+    text-transform: unset;
+  }
+}

@@ -1,0 +1,273 @@
+.companions {
+  padding: 95px 0 30px;
+  background: $main-back;
+
+  @include t {
+    padding: 208px 40px 87px 40px;
+  }
+  @include t {
+    padding: 208px 40px 134px 40px;
+  }
+}
+.companion__title {
+  margin-bottom: 19px;
+  position: relative;
+  z-index: 2;
+  &:before {
+    content: "";
+    width: 113px;
+    height: 132px;
+    background: #141b3b;
+    border-radius: 0 20px 20px 20px;
+    position: absolute;
+    left: -51px;
+    top: -34px;
+    z-index: -1;
+    @include t {
+      width: 212px;
+      height: 212px;
+      border-radius: 20px;
+      left: -33px;
+      top: -70px;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 143px;
+    height: 143px;
+    top: -34px;
+    right: 0;
+    z-index: -1;
+    background-image: url(../img/bg/smolov-back-desktop.png);
+    @include t {
+      background-image: url(../img/bg/rogovaya-back-desktop.png);
+      width: 285px;
+      height: 285px;
+      top: -61px;
+    }
+    @include d {
+      display: none;
+    }
+  }
+
+  @include t {
+    margin-bottom: 55px;
+  }
+}
+
+.companions__text {
+  max-width: 220px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 22px;
+  @include t {
+    max-width: 0;
+    min-width: 428px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    max-width: 430px;
+    margin-bottom: 39px;
+  }
+  @include d {
+    line-height: 33px;
+    margin-right: 193px;
+  }
+}
+.companions__prompt {
+  margin-bottom: 54px;
+  position: relative;
+  z-index: 2;
+  @include t {
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 59px;
+    max-width: 270px;
+    z-index: 3;
+  }
+}
+
+.companions__list {
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 2;
+  @include t {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 81px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 71px;
+    left: -27px;
+    top: -33px;
+    z-index: -1;
+    background-image: url("../img/bg/rogovaya-back-desktop.png");
+    @include t {
+      background-image: url(../img/bg/smolov-back-desktop.png);
+      width: 143px;
+      height: 143px;
+      left: -34px;
+      top: -97px;
+    }
+    @include d {
+      left: -203px;
+      top: 0;
+    }
+  }
+}
+
+.companions-item {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 9px;
+  @include t {
+    width: 285px;
+    border-radius: 20px;
+  }
+  @include d {
+    margin-right: 60px;
+  }
+}
+
+.companion__button {
+  display: block;
+  width: 100%;
+  @include d {
+    width: 280px;
+    margin-top: -200px;
+  }
+}
+
+.companions-item__photo {
+  source,
+  img {
+    display: block;
+  }
+}
+.companions-item__desc {
+  position: relative;
+  padding: 27px 36px 20px 46px;
+  background-color: #fff;
+  color: $grey-text;
+  @include d {
+    padding: 31px 36px 30px 46px;
+  }
+}
+
+.companions-item__name {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: #1d2e5b;
+  margin-bottom: 15px;
+  @include d {
+    font-size: 24px;
+  }
+}
+
+.companions__name-wrapper {
+  position: relative;
+  &:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    left: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &--red {
+    &:before {
+      background-color: #f97676;
+    }
+  }
+  &--green {
+    &:before {
+      background-color: #81e31e;
+    }
+  }
+}
+
+.companions-item__tags {
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 14px;
+  @include d {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 24px;
+  }
+}
+
+.companions-item__transport-list {
+  margin: 0 auto;
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.transport-list__item {
+  width: 24px;
+  img {
+    opacity: 0.15;
+  }
+  &--active {
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+.companions__flags {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+.companions__flag {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.companions__desktop-wrapper {
+  @include d {
+    display: flex;
+    padding-bottom: 34px;
+  }
+}
+
+.companions__progress {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+}
+
+.conpanions__desc-wrapper {
+  position: relative;
+
+  &:after {
+    @include d {
+      content: "";
+      background: url(../img/bg/rogovaya-back-desktop.png) no-repeat;
+      width: 285px;
+      height: 285px;
+      bottom: 31px;
+      left: 51px;
+      position: absolute;
+    }
+  }
+}

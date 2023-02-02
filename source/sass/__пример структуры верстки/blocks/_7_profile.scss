@@ -1,0 +1,197 @@
+.profile {
+  padding: 70px 0 38px 23px;
+  background-color: #e6e8f1;
+  color: $grey-text;
+
+  @include t {
+    padding: 135px 0 63px 23px;
+    background-color: #edeff6;
+  }
+
+  @include d {
+    padding-bottom: 187px;
+  }
+}
+
+.ptofile__title {
+  margin-bottom: 56px;
+
+  @include t {
+    text-align: center;
+    max-width: none;
+    margin-bottom: 73px;
+  }
+
+  @include d {
+    margin-bottom: 131px;
+  }
+}
+
+.tariffs-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 16px;
+  align-items: center;
+
+  @include t {
+    font-size: 28px;
+    line-height: 28px;
+    justify-content: flex-start;
+    padding: 0;
+    margin-top: -1px;
+    margin-bottom: -1px;
+  }
+}
+
+.tariffs__title {
+  margin-bottom: 6px;
+
+  @include t {
+    margin-bottom: 0;
+  }
+}
+
+.tariffs__number {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  order: 2;
+  background-color: #ff8d30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 400;
+  margin-left: 11px;
+
+  @include t {
+    margin-left: 0;
+    width: 68px;
+    height: 68px;
+    order: 0;
+    margin-right: 22px;
+  }
+
+  &--two {
+    background-color: #ffbd30;
+  }
+
+  &--three {
+    background-color: #ffd74b;
+  }
+}
+
+.tariffs__desc {
+  border-bottom: #e1e3e9 1px solid;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  flex-grow: 1;
+
+  &--top {
+    border-top: #e1e3e9 1px solid;
+  }
+
+  @include t {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.tariffs__link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #132576;
+  text-decoration: none;
+
+  @include t {
+    margin-left: 89px;
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+  }
+
+  &::before {
+    @include t {
+      display: block;
+      position: absolute;
+      content: "";
+      background: #e2e5f2 url("../img/icons/businessman.svg") center center
+        no-repeat;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -93px;
+    }
+  }
+}
+
+.tariffs-list {
+  z-index: 1;
+  position: relative;
+  margin-bottom: 30px;
+
+  &::before {
+    @include t {
+      content: "";
+      position: absolute;
+      background-image: url("../img/rates.svg");
+      background-size: contain;
+      bottom: -110px;
+      right: #{calc(198px / 2 - 50px)};
+      width: 100px;
+      height: 100px;
+    }
+
+    @include d {
+      width: 198px;
+      height: 198px;
+      right: 0;
+      top: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+
+  @include t {
+    margin-bottom: 78px;
+    max-width: 1066px;
+  }
+
+  @include d {
+    margin-bottom: 58px;
+  }
+
+  &::after {
+    @include t {
+      content: "";
+      background-color: #e2e5f2;
+      width: 198px;
+      height: 285px;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      z-index: -1;
+    }
+
+    @include d {
+      width: 446px;
+      height: 300px;
+    }
+  }
+}
+
+.tariffs__price {
+  @include t {
+    padding-right: 35px;
+  }
+
+  @include d {
+    padding-right: 161px;
+  }
+}

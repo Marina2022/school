@@ -1,0 +1,227 @@
+.form-profile {
+  padding: 20px 25px 26px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @include t {
+    padding: 120px 75px 75px 90px;
+  }
+  @include d {
+    margin-top: -310px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.form-profile__progress {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 18px;
+  @include t {
+    width: 94px;
+    height: 94px;
+    order: -2;
+  }
+  @include d {
+    width: 95px;
+    height: 95px;
+    order: 0;
+    margin-right: 44px;
+  }
+
+  .progress__img {
+    width: 100%;
+  }
+  .progress__number {
+    color: #161c35;
+    border-bottom-color: rgb(#444444, 0.3);
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 38px;
+    @include d {
+      color: #fff;
+      border-bottom-color: rgb(#fff, 0.3);
+    }
+  }
+  .progress__level {
+    padding-top: 5px;
+    font-size: 18px;
+    line-height: 18px;
+    @include d {
+      color: #fff;
+    }
+  }
+  .progress-bar--80p {
+    stroke-dasharray: 294, 170;
+    transform: rotate(-84deg);
+  }
+}
+.form-profile__photo {
+  display: block;
+  border-radius: 50%;
+  @include t {
+    border-radius: 0;
+    margin-bottom: 50px;
+  }
+  @include d {
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+}
+.form-profile__button-wrapper {
+  @include d {
+    width: 100%;
+    margin-right: 80px;
+    text-align: right;
+  }
+}
+.form-profile__button {
+  width: 270px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  background-color: #dfe3f0;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin-bottom: 33px;
+  text-transform: uppercase;
+  padding: 12px 0 14px;
+  @include t {
+    padding: 22px 0 20px 0;
+    border-radius: 10px;
+    display: block;
+    color: #1d2e5b;
+    font-weight: 500;
+    margin-bottom: 52px;
+    width: 618px;
+  }
+  @include d {
+    width: 190px;
+    display: inline-block;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    color: #161c35;
+  }
+}
+.form-profile__tags {
+  margin-bottom: 25px;
+  position: relative;
+  width: 100%;
+  padding: 27px 27px 27px 25px;
+  min-height: 89px;
+  border: 1px #cbced9 solid;
+  border-radius: 10px;
+  @include t {
+    min-height: 94.5px;
+    padding: 35px 40px 15px 40px;
+    margin-right: 0;
+  }
+  @include d {
+    width: 732px;
+    margin-right: 140px;
+    padding: 30px 40px 0 40px;
+  }
+}
+.form-profile__tags-text {
+  color: rgb(#444444, 0.6);
+  resize: none;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: inherit;
+  @include t {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+.form-profile__legend {
+  position: absolute;
+  display: block;
+  top: -10px;
+  left: 50%;
+  background-color: #edeff6;
+  padding: 0 15px;
+  transform: translateX(-50%);
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  font-weight: bold;
+  @include t {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    top: unset;
+    bottom: -10px;
+  }
+  &--tags {
+    @include d {
+      left: 40px;
+    }
+  }
+}
+
+.form-profile__icons {
+  position: relative;
+  width: 100%;
+  @include t {
+    align-self: flex-start;
+    order: -1;
+    width: 308px;
+  }
+  @include d {
+    order: 0;
+    width: 384px;
+  }
+}
+
+.desktop-visible {
+  display: none;
+  @include d {
+    display: inline;
+  }
+}
+
+.not-desktop-visible {
+  @include d {
+    display: none;
+  }
+}
+
+.form-profile__transport-list {
+  border: 1px #cbced9 solid;
+}
+.transport-list {
+  border-radius: 10px;
+  padding: 16px 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  @include t {
+    padding: 26px 0;
+  }
+  @include d {
+    padding: 24px 0;
+  }
+}
+
+.transport-list__item--form {
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 50%;
+  }
+  @include t {
+    width: 44px;
+    height: 44px;
+  }
+}

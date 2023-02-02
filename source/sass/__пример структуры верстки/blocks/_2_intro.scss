@@ -1,0 +1,155 @@
+.intro {
+  padding-top: 65px;
+
+  background: url("../img/bg/traveller-illustration-mobile.svg") center bottom
+      316px no-repeat,
+    url("../img/bg/globe-back-mobile.png") center bottom 110px/100% 100%
+      no-repeat;
+  background-color: $blue-dark;
+  @media (min-width: $tablet) {
+    background: url("../img/bg/traveller-illustration-tablet.svg") left #{calc(
+          75% - 50px
+        )} bottom 140px no-repeat,
+      $blue url("../img/bg/globe-back-tablet.png") center bottom/100% 65%
+        no-repeat;
+    padding-bottom: 350px;
+    padding-top: 122px;
+  }
+  @media (min-width: $desktop) {
+    background: url("../img/bg/traveller-illustration-desktop.svg") center
+        bottom no-repeat,
+      $blue-dark url("../img/bg/globe-back-desktop.png") left #{calc(
+          40% - 150px
+        )} bottom/100% 80% no-repeat;
+    padding-bottom: 331px;
+    padding-top: 110px;
+  }
+
+  .intro-wrapper {
+    @media (min-width: $desktop) {
+      display: flex;
+      width: 1230px;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    position: relative;
+  }
+}
+
+.intro__user-nav {
+  display: flex;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+.intro__title-part {
+  margin-bottom: 265px;
+  @media (min-width: $tablet) {
+    margin-bottom: 86px;
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    .container {
+      padding: 0;
+    }
+  }
+}
+
+.main-title {
+  padding: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 70px;
+    width: 400px;
+  }
+  @media (min-width: $desktop) {
+    font-size: 60px;
+    line-height: 70px;
+    text-align: left;
+    width: 420px;
+    margin: 0;
+  }
+}
+
+.intro-quote-container {
+  width: 295px;
+  margin: 0 auto;
+  @media (min-width: $tablet) {
+    padding-left: 72px;
+    width: 768px;
+    margin: 0 auto;
+  }
+  @media (min-width: $desktop) {
+    padding-left: 0;
+    width: auto;
+  }
+}
+
+.intro__quote-block {
+  padding-left: 25px;
+  padding-top: 50px;
+  position: relative;
+  background-color: $blue-dark;
+  .quote-block__wrapper {
+    max-width: 186px;
+    padding-bottom: 109px;
+    @media (min-width: $tablet) {
+      max-width: 264px;
+      padding-bottom: 0;
+    }
+    @media (min-width: $desktop) {
+      padding-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop) {
+  }
+}
+
+.intro__slogan {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 45px;
+  @media (min-width: $tablet) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  @media (min-width: $desktop) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+.intro__quote-author {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  @media (min-width: $tablet) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  @media (min-width: $desktop) {
+    font-size: 21px;
+    line-height: 24px;
+  }
+}

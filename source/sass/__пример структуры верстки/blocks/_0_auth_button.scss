@@ -1,0 +1,86 @@
+.auth-button {
+  font-family: inherit;
+  background-color: $primary-color;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161c35;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  padding: 10px 20px 8px;
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    width: 188px;
+  }
+  &--tablet-only {
+    display: none;
+    @include t {
+      margin: 0;
+      display: inline-block;
+    }
+    @include d {
+      display: none;
+    }
+  }
+  &--mobile-only {
+    @include t {
+      display: none;
+    }
+    @include d {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+}
+
+.auth-button__link {
+  display: none;
+  background: #ff8d30;
+  color: #161c35;
+  border-radius: 50%;
+  &:hover {
+    background-color: #f26926;
+  }
+  &:active {
+    background-color: #f26926;
+    color: rgb(#161c35, 0.3);
+  }
+
+  &--phone {
+    background: #ff8d30;
+  }
+  &--email {
+    background: #ffbd30;
+    &:hover {
+      background-color: #ff8d30;
+    }
+  }
+  @media (min-width: 1440px) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+// intro - было в контейнере intro-wrapper
+
+.intro__auth-button {
+  width: 190px;
+  padding: 5px 20px 5px;
+}
+
+.intro__auth-button__link {
+  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}

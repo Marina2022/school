@@ -1,0 +1,16 @@
+@mixin t {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin d {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin but {
+  border: none;
+  outline: none;
+}
