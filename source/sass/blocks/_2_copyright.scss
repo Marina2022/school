@@ -21,7 +21,8 @@
 
     @media (max-width: 500px) {
       font-size: 4vw;
-      margin-bottom: 4vw;
+      margin-bottom: 3.5vw;
+      letter-spacing: 1.3px;
     }
   }
 
@@ -35,13 +36,15 @@
       letter-spacing: -0.47px;
     }
     @media (max-width: 500px) {
-      font-size: 4vw;
+      font-size: 3.5vw;
       margin-top: 0vw;
-      margin-bottom: 1.8vw;
+      margin-bottom: 2.4vw;
+      letter-spacing: 0.65px;
+      line-height: 4.15vw;
     }
   }
 
-  h3{
+  h3 {
     color: #444;
     font-size: 1.5vw;
     margin-bottom: 2.5vw;
@@ -51,19 +54,18 @@
       letter-spacing: -0.2px;
       margin-bottom: 1.4vw;
     }
+    @media (max-width: 500px) {
+      font-size: 3.1vw;
+      letter-spacing: 0.3px;
+      margin-bottom: 2.8vw;
+    }
   }
-
 
   .copyright__text-list {
-
-    @media (max-width: 897px) {
-      //margin-top: -1.5vw;
-    }
     @media (max-width: 500px) {
-      //margin-top: 0;
+      margin-bottom: -1vw;
     }
   }
-
 
   .copyright__list-item {
     letter-spacing: 0.3px;
@@ -75,7 +77,11 @@
       font-size: 1.4vw;
       line-height: 1.9vw;
       margin-bottom: 1.8vw;
-      letter-spacing: 0.38px;
+    }
+    @media (max-width: 500px) {
+      font-size: 3.1vw;
+      line-height: 4vw;
+      margin-bottom: 4vw;
     }
   }
 
@@ -83,13 +89,23 @@
     letter-spacing: 0.8px;
     font-weight: bold;
     @media (max-width: 897px) {
-    letter-spacing: 0.7px;
+      letter-spacing: 0.7px;
+    }
+    @media (max-width: 500px) {
+      letter-spacing: 0.94px;
     }
   }
+
   .copyright__list-item-text {
     text-indent: 2vw;
+    letter-spacing: 0.38px;
     @media (max-width: 897px) {
       text-indent: 1.4vw;
+      letter-spacing: 0.38px;
+    }
+    @media (max-width: 500px) {
+      text-indent: 2.5vw;
+      letter-spacing: 0.55px;
     }
   }
 
@@ -105,9 +121,9 @@
       line-height: 2.5vw;
     }
     @media (max-width: 500px) {
-      font-size: 3.8vw;
-      line-height: 4.6vw;
-      letter-spacing: -0.1px;
+      font-size: 3.2vw;
+      line-height: 4vw;
+      letter-spacing: 0.3px;
       margin-bottom: 1vw;
     }
   }
@@ -125,7 +141,7 @@
     }
 
     @media (max-width: 500px) {
-      padding: 4.6% 1% 2% 2.8%
+      padding: 5.2% 2.5% 2% 3.8%;
     }
   }
 
@@ -153,6 +169,12 @@
   }
 }
 
+.ref-underlined {
+  @media (max-width: 500px) {
+    border-bottom: 1px solid #344760;;
+  }
+}
+
 .title-block--copyright {
   @media (max-width: 897px) {
     margin-top: 9px;
@@ -163,11 +185,12 @@
   }
 
   @media (max-width: 500px) {
-    padding: 0.2vw 2.7vw 1vw 2.2vw;
+    padding: 0.4vw 2.7vw 1vw 2.6vw;
     margin-top: 5vw;
     font-size: 4vw;
     margin-bottom: 1%;
   }
+
 
 
 }
