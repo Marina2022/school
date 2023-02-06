@@ -67,7 +67,7 @@ export const html = () => {
 
 export const styles = () => {
   return gulp
-    .src("source/sass/**/*.+(scss|sass)", { sourcemaps: true })
+    .src("source/sass/**/*.+(scss|sass|css)", { sourcemaps: true })
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
@@ -102,7 +102,7 @@ const watcher = () => {
 
 export const copy = () => {
   return gulp
-    .src(["source/fonts/*", "source/*.ico", "source/img/**/.svg"], {
+    .src(["source/fonts/*", "source/*.ico", "source/img/**/.svg", "source/local/**"], {
       base: "source",
     })
     .pipe(gulp.dest("build"));
