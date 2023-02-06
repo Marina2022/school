@@ -61,7 +61,7 @@ const makeWebp = () => {
 export const html = () => {
   return gulp
     .src("source/**/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    //.pipe(htmlmin({ collapseWhitespace: true }))  // это минифай, потом верни
     .pipe(gulp.dest("build"));
 };
 

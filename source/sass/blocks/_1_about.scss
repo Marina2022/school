@@ -39,7 +39,7 @@
     }
     @media (max-width: 500px) {
       font-size: 4vw;
-      margin-top: 0vw;
+      margin-top: 0;
       margin-bottom: 1.8vw;
     }
   }
@@ -96,15 +96,7 @@
 
   }
 
-  .text-list--about {
-    margin-top: -1.3vw;
-    @media (max-width: 897px) {
-      margin-top: -1.5vw;
-    }
-    @media (max-width: 500px) {
-      margin-top: 0;
-    }
-  }
+
 }
 
 .ref-underlined {
