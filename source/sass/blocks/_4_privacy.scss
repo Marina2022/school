@@ -9,9 +9,9 @@
   h1 {
     margin-top: 2vw;
     font-size: 2.15vw;
-    color: #444;
-    margin-bottom: 2.9vw;
-    letter-spacing: 1.1px;
+    color: #444444;
+    margin-bottom: 1.8vw;
+    letter-spacing: 1.3px;
 
     @media (max-width: 897px) {
       margin-top: 1.7vw;
@@ -30,10 +30,12 @@
   }
 
   h2 {
+    margin-top: 0;
     font-size: 1.9vw;
-    color: #444;
-    margin-bottom: 1.3vw;
+    color: #444444;
+    margin-bottom: 1.5vw;
     letter-spacing: 0.4px;
+    text-transform: uppercase;
     @media (max-width: 897px) {
       margin-bottom: 1.3vw;
       letter-spacing: -0.3px;
@@ -48,7 +50,7 @@
   }
 
   h3 {
-    color: #344760;
+    color: #444444;
     font-size: 1.5vw;
     margin-bottom: 2.5vw;
     letter-spacing: 0;
@@ -64,6 +66,14 @@
     }
   }
 
+  .date-text {
+    font-family: arial, sans-serif;
+    color: #344760;
+    font-style: italic;
+    font-size: 1.38vw;
+    margin-bottom: 2.7vw;
+  }
+
   .text-list--privacy {
     margin-bottom: 2.5vw;
 
@@ -74,7 +84,7 @@
       font-size: 1.4vw;
       line-height: 2vw;
       strong {
-        letter-spacing: 1px;
+        letter-spacing: 0.9px;
       }
       @media (max-width: 897px) {
         font-size: 1.4vw;
@@ -95,21 +105,11 @@
         }
       }
     }
-  }
 
-  .sublist--privacy {
-    padding-left: 0vw;
-
-    li {
-      text-indent: 2vw;
+    .sublist-points__item, .sublist-bullets__item, .sublist-numbers__item {
       margin-bottom: 0;
     }
-  }
 
-  .sub-sublist--privacy {
-    li {
-      text-indent: 4vw;
-    }
   }
 
 
@@ -149,6 +149,7 @@
   }
 
   .privacy__list-item-text {
+    text-indent: 2vw;
     letter-spacing: 0.38px;
     @media (max-width: 897px) {
       letter-spacing: 0.38px;
@@ -158,23 +159,13 @@
     }
   }
 
-  p {
-    letter-spacing: 0.3px;
-    color: #344760;
-    margin-bottom: 2.2vw;
-    font-size: 1.5vw;
-    line-height: 2.05vw;
-    @media (max-width: 897px) {
-      font-size: 1.4vw;
-      line-height: 1.9vw;
-      margin-bottom: 1.8vw;
-    }
-    @media (max-width: 500px) {
-      font-size: 3.1vw;
-      line-height: 4vw;
-      margin-bottom: 4vw;
-    }
+
+
+  .in-list-paragraph--privacy {
+    margin-top: 0;
+    margin-bottom: 0.6vw;
   }
+
 
   .content-block-wrapper {
     padding: 1.8% 1% 2% 4.1%;
@@ -197,7 +188,7 @@
   .content-block {
     position: relative;
     height: 70vh;
-    padding: 0.4% 7.4% 1.5% 1.1%;
+    padding: 0.4% 7.4% 1.5% 1.3%;
 
     @media (max-width: 897px) {
       padding: 0.3% 1.4% 1.5% 2.2%;
@@ -210,7 +201,6 @@
   }
 
   .content-block--privacy {
-    color: green;
     @media (max-width: 897px) {
       padding: 0vw 4vw 0.8vw 1.9vw;
     }
@@ -241,6 +231,8 @@
       display: block;
     }
   }
+
+
 }
 
 .ref-underlined {
@@ -252,7 +244,7 @@
 .title-block--privacy {
   padding: 0.4vw 1.4vw 0.7vw 0.9vw;
   font-size: 1.65vw;
-  letter-spacing: 3.1px;
+  letter-spacing: -1.5px;
   @media (max-width: 897px) {
     margin-top: 9px;
     padding: 0.3vw 1.6vw 0.8vw 1.8vw;
