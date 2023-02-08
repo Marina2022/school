@@ -174,17 +174,16 @@
       width: 38%;
       color: #444444;
       font-weight: bold;
-      @media (max-width: 987px) {
+      @media (max-width: 897px) {
         width: 36.5%;
       }
       @media (max-width: 500px) {
         width: 100%;
       }
     }
-
     .address-data-text {
       width: 62%;
-      @media (max-width: 987px) {
+      @media (max-width: 897px) {
         width: 63.5%;
         font-size: 1.6vw;
         letter-spacing: 0.7px;
@@ -243,7 +242,7 @@
       @media (max-width: 897px) {
         width: 63.5%;
         font-size: 2vw;
-        letter-spacing: -1.1px;
+        letter-spacing: -0.8px;
       }
 
       @media (max-width: 500px) {
