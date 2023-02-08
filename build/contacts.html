@@ -121,12 +121,19 @@
           <div class="feedback-form-block">
             <h2>Обратная связь</h2>
             <form action="" class="contacts__feedback-form">
-<!--              <div class="form-placeholder-wrapper">-->
-                <input type="text" required class="feedback-input" placeholder="Ваше имя*">
-<!--              </div>-->
+              <div class="form-placeholder-wrapper">
+                <input type="text" required class="feedback-input feedback-input--with-star" placeholder="Ваше имя" id="name">
+                <label for="name" class="star-input-label"></label>
+              </div>
 
-              <input type="text" required class="feedback-input" placeholder="Ваш e-mail*">
-              <input type="text" required class="feedback-input" placeholder="Ваш телефон*">
+              <div class="form-placeholder-wrapper">
+              <input type="text" required class="feedback-input feedback-input--with-star" placeholder="Ваш e-mail*">
+              </div>
+
+              <div class="form-placeholder-wrapper">
+              <input type="text" required class="feedback-input feedback-input--with-star" placeholder="Ваш телефон*">
+              </div>
+
               <input type="text"  class="feedback-input" placeholder="Тема">
               <textarea class="feedback-input feedback-input--message" placeholder="Сообщение"></textarea>
             </form>

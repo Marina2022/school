@@ -14,7 +14,6 @@
 
     justify-content: start;
     height: 100%;
-
   }
 
   .contacts__feedback-form {
@@ -31,6 +30,29 @@
     @media (max-width: 500px) {
       height: auto;
     }
+
+    .form-placeholder-wrapper {
+      height: 25%;
+      margin-bottom: 1.2%;
+      margin-top: 1%;
+      @media (max-width: 897px) {
+
+        margin-bottom: 1vw;
+        margin-top: 0.3%;
+      }
+      @media (max-width: 500px) {
+        margin-bottom: 3.1vw;
+        }
+    }
+
+    .feedback-input--with-star {
+      height: 100%;
+      margin: 0;
+      @media (max-width: 500px) {
+        height: 11.5vw;
+      }
+    }
+
   }
 
   .feedback-input {
@@ -44,13 +66,14 @@
     &--message {
       height: 58%;
       align-self: start;
-      padding-top: 0.6vw ;
+      padding-top: 0.6vw;
     }
 
     &::placeholder {
       padding-left: 1vw;
       color: #444444;
       position: relative;
+
       &:after {
         content: "***";
         position: absolut;
@@ -86,6 +109,7 @@
         }
       }
     }
+
 
   }
 
@@ -149,11 +173,14 @@
     @media (max-width: 897px) {
       margin-bottom: 4.8vw;
     }
+
     .bank-data-title {
       width: 38%;
+
       &--slim {
         font-weight: normal;
       }
+
       @media (max-width: 897px) {
         width: 36.5%;
       }
@@ -166,6 +193,7 @@
       font-size: 1vw;
       letter-spacing: -0.3px;
       width: 62%;
+
       &--slim {
         font-weight: normal;
       }
@@ -207,6 +235,7 @@
       line-height: 4.15vw;
     }
   }
+
   p {
     margin-top: 0;
     margin-bottom: 0.8vh;
