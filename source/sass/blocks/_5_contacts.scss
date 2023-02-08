@@ -32,11 +32,11 @@
     }
 
     .form-placeholder-wrapper {
+      position: relative;
       height: 25%;
       margin-bottom: 1.2%;
       margin-top: 1%;
       @media (max-width: 897px) {
-
         margin-bottom: 1vw;
         margin-top: 0.3%;
       }
@@ -49,7 +49,49 @@
       height: 100%;
       margin: 0;
       @media (max-width: 500px) {
-        height: 11.5vw;
+        height: 11.1vw;
+      }
+    }
+
+    .star-input-label {
+      position: absolute;
+      top: 0.6vw;
+      right: 11.2vw;
+    }
+
+    .star-input-label {
+      position: absolute;
+      top: 1.2vh;
+      right: 11vw;
+      @media (max-width: 897px) {
+        top: 0.6vh;
+        right: 23.2vw;
+      }
+      @media (max-width: 500px) {
+        top: 2.7vw;
+        right: 61.2vw;
+        color: red;
+      }
+
+
+      &--email {
+        right: 10.7vw;
+        @media (max-width: 897px) {
+          right: 22.7vw;
+        }
+        @media (max-width: 500px) {
+          right: 60vw;
+        }
+      }
+
+      &--phone {
+        right: 9.6vw;
+        @media (max-width: 897px) {
+          right: 20.3vw;
+        }
+        @media (max-width: 500px) {
+          right: 55.5vw;
+        }
       }
     }
 
