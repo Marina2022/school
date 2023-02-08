@@ -16,13 +16,13 @@
     @media (max-width: 897px) {
       margin-top: 1.7vw;
       font-size: 2.03vw;
-      margin-bottom: 2.6vw;
-      letter-spacing: 0.65px;
+      margin-bottom: 1.7vw;
+      letter-spacing: 1px;
     }
 
     @media (max-width: 500px) {
-      font-size: 4vw;
-      margin-bottom: 3.5vw;
+      font-size: 4.02vw;
+      margin-bottom: 1.4vw;
       letter-spacing: 1.25px;
       line-height: 5.5vw;
       margin-top: 1.4vw;
@@ -37,7 +37,7 @@
     letter-spacing: 0.4px;
     text-transform: uppercase;
     @media (max-width: 897px) {
-      margin-bottom: 1.3vw;
+      margin-bottom: 1.4vw;
       letter-spacing: -0.3px;
     }
     @media (max-width: 500px) {
@@ -72,6 +72,14 @@
     font-style: italic;
     font-size: 1.38vw;
     margin-bottom: 2.7vw;
+    @media (max-width: 897px) {
+      font-size: 1.32vw;
+      margin-bottom: 2.4vw;
+    }
+    @media (max-width: 500px) {
+      font-size: 3.2vw;
+      margin-bottom: 3.5vw;
+    }
   }
 
   .text-list--privacy {
@@ -83,25 +91,27 @@
       margin-bottom: 2vw;
       font-size: 1.4vw;
       line-height: 2vw;
+
       strong {
         letter-spacing: 0.9px;
       }
+
       @media (max-width: 897px) {
         font-size: 1.4vw;
-        line-height: 1.9vw;
+        line-height: 1.95vw;
         margin-bottom: 1.8vw;
-        letter-spacing: -0.07px;
+        letter-spacing: 0.08px;
         strong {
-          letter-spacing: 0.2px;
+          letter-spacing: 0.32px;
         }
       }
       @media (max-width: 500px) {
         font-size: 3.1vw;
-        line-height: 4vw;
+        line-height: 4.02vw;
         margin-bottom: 4vw;
         letter-spacing: 0.5px;
         strong {
-          letter-spacing: 1px;
+          letter-spacing: 0.9px;
         }
       }
     }
@@ -160,10 +170,12 @@
   }
 
 
-
   .in-list-paragraph--privacy {
     margin-top: 0;
     margin-bottom: 0.6vw;
+    @media (max-width: 500px) {
+      margin-bottom: 1.7vw;
+    }
   }
 
 
@@ -202,7 +214,7 @@
 
   .content-block--privacy {
     @media (max-width: 897px) {
-      padding: 0vw 4vw 0.8vw 1.9vw;
+      padding: 0vw 3.8vw 0.8vw 1.9vw;
     }
   }
 
@@ -232,7 +244,12 @@
     }
   }
 
-
+  .btn-wrapper {
+    text-align: center;
+    @media (max-width: 500px) {
+      padding-bottom: 3vh;
+    }
+  }
 }
 
 .ref-underlined {
@@ -246,18 +263,19 @@
   font-size: 1.65vw;
   letter-spacing: -1.5px;
   @media (max-width: 897px) {
-    margin-top: 9px;
-    padding: 0.3vw 1.6vw 0.8vw 1.8vw;
-    letter-spacing: 1.5px;
-    font-size: 3.1vw;
+    margin-top: 4px;
+    padding: 1.3vw 1.6vw 1.6vw 1.25vw;
+    letter-spacing: 0.1px;
+    font-size: 2vw;
     margin-bottom: 3.5%;
   }
 
   @media (max-width: 500px) {
-    padding: 0.4vw 2.7vw 1vw 2.6vw;
-    margin-top: 5vw;
-    font-size: 4vw;
+    padding: 0vw 2.7vw 0.5vw 2.6vw;
+    margin-top: 4.6vw;
+    font-size: 4.53vw;
     margin-bottom: 1%;
+    letter-spacing: 0.3px;
   }
 }
 
@@ -265,6 +283,9 @@
   margin-top: 0.5vw;
   @media (max-width: 897px) {
     margin-top: 1.5vw;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 1.5vw;
   }
 
 }

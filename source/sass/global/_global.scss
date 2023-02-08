@@ -106,13 +106,13 @@ ol {
 
   &:focus, &:hover {
     width: 1.3vw;
-    background-color: rgb(255, 255, 255, 0.3) ;
+    background-color: rgb(255, 255, 255, 0.3);
     @media (max-width: 897px) {
       width: 1vw;
     }
     @media (max-width: 500px) {
-    width: 2vw;
-  }
+      width: 2vw;
+    }
   }
 }
 
@@ -143,7 +143,6 @@ ol {
       width: 2vw;
     }
   }
-
 
 
   &:focus, .ps__rail-y:hover {
@@ -179,9 +178,11 @@ ol {
   font-style: italic;
   border-bottom: 1px solid #344760;;
 }
+
 .btn-wrapper {
   text-align: center;
 }
+
 .back-to-purchase {
   padding: 18px 31px 20px;;
   border-radius: 25px;
@@ -202,6 +203,7 @@ ol {
     padding: 13px 21px 14px;
     font-size: 18px;
   }
+
   &:hover {
     background-color: #FE7B28;
   }
