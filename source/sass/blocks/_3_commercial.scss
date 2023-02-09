@@ -215,9 +215,8 @@
     }
   }
 
-
   .ps__thumb-y {
-
+    height: 100px;
     @media (max-width: 897px) {
       display: block;
       right: 0;
@@ -237,7 +236,6 @@
   }
 
   .ps__rail-y.ps--clicking .ps__thumb-y {
-
     @media (max-width: 897px) {
       display: block;
     }

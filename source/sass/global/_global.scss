@@ -93,7 +93,6 @@ ol {
 }
 
 .ps__thumb-y {
-  height: 100px; !important;
   width: 1.3vw;
   background-color: rgb(255, 255, 255, 0.3) !important;
   @media (max-width: 897px) {
@@ -117,7 +116,6 @@ ol {
 }
 
 .ps__rail-y:hover > .ps__thumb-y {
-  height: 100px; !important;
   width: 1.3vw;
   background-color: rgb(255, 255, 255, 0.3);
   @media (max-width: 897px) {
@@ -135,7 +133,6 @@ ol {
   }
 
   &:hover, &:focus > .ps__thumb-y {
-    height: 100px; !important;
     width: 1.3vw;
     background-color: rgb(255, 255, 255, 0.3);
     @media (max-width: 897px) {
@@ -165,7 +162,6 @@ ol {
 
 
 .ps__rail-y.ps--clicking .ps__thumb-y {
-  height: 100px; !important;
   width: 1.3vw;
   @media (max-width: 897px) {
     width: 1vw;
