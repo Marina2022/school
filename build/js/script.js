@@ -1,1 +1,1 @@
-const contentBlock=document.querySelector(".content-block"),ps=new PerfectScrollbar(".content-block",{wheelSpeed:2,wheelPropagation:!0,minScrollbarLength:20});
+const ps=new PerfectScrollbar(".content-block",{wheelSpeed:2,wheelPropagation:!0,minScrollbarLength:100});
