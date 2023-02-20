@@ -168,6 +168,7 @@
     @media (max-width: 500px) {
       height: auto;
       margin-bottom: 4.4vw;
+
     }
 
     .address-data-title {
@@ -192,7 +193,7 @@
       @media (max-width: 500px) {
         width: 100%;
         font-size: 3vw;
-        letter-spacing: 0.7px;
+        letter-spacing: 0.5px;
         margin-bottom: 1vw;
       }
     }
@@ -272,7 +273,7 @@
     }
     @media (max-width: 500px) {
       margin-top: 0;
-      margin-bottom: 3.3vw;
+      margin-bottom: 2.2vw;
       font-size: 4.15vw;
       letter-spacing: -0.15px;
       line-height: 4.15vw;
@@ -296,7 +297,7 @@
     @media (max-width: 500px) {
       line-height: 4vw;
       font-size: 3.5vw;
-      letter-spacing: -0.4px;
+      letter-spacing: -0.7px;
       margin-bottom: 3.8vw;
     }
   }
@@ -338,7 +339,7 @@
     @media (max-width: 500px) {
       height: 74vh;
       font-size: 3.3vw;
-      line-height: 5.3vw;
+      line-height: 5.1vw;
     }
   }
 
@@ -347,7 +348,7 @@
       padding: 0.2vw 8.6vw 0.8vw 2.2vw;
     }
     @media (max-width: 500px) {
-      padding: 1.4vw 4.6vw 0.8vw 1.8vw;
+      padding: 0.6vw 4.6vw 0.8vw 1.8vw;
     }
   }
 
@@ -423,12 +424,13 @@
 
 .back-to-purchase--contacts {
   margin-top: 2.1vw;
-  padding: 15px 128.3px 24px;
+  //padding: 15px 128.3px 24px;
+  padding: 1.2vw 8.3vw 1.3vw;
   //border-radius: 25px;
   border: none;
   outline: none;
   box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 90%);
-  font-size: 26px;
+  font-size: 1.4vw;
   letter-spacing: 2.3px;
   font-weight: bold;
   text-align: center;
@@ -441,6 +443,9 @@
   }
   @media (max-width: 500px) {
     margin-bottom: 1.5vw;
+    width: 100%;
+    font-size: 4vw;
+    padding: 2.9vw 8.3vw 3vw;
   }
 
 }
