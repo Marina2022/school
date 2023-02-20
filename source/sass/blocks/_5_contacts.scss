@@ -1,6 +1,7 @@
 .main--contacts {
   color: #344760;
   display: block;
+  margin-bottom: 10vw;
 
 
   .container {
@@ -9,17 +10,17 @@
   }
 
   .contacts-blocks-wrapper {
-    display: flex;
-    flex-direction: column;
-
-    justify-content: start;
+    //display: flex;
+    //flex-direction: column;
+    //
+    //justify-content: start;
     height: 100%;
   }
 
   .contacts__feedback-form {
     display: flex;
     flex-direction: column;
-    height: 21vh;
+    height: 15.7vw;   // сделать height надо от ширины
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
@@ -48,6 +49,10 @@
     .feedback-input--with-star {
       height: 100%;
       margin: 0;
+      @media (max-width: 897px) {
+        height: 100%;
+        margin: 0;
+      }
       @media (max-width: 500px) {
         height: 11.1vw;
       }
@@ -56,16 +61,11 @@
     .star-input-label {
       position: absolute;
       top: 0.6vw;
-      right: 11.2vw;
-    }
+      right: 18.9vw;
 
-    .star-input-label {
-      position: absolute;
-      top: 1.2vh;
-      right: 11vw;
       @media (max-width: 897px) {
-        top: 0.6vh;
-        right: 23.2vw;
+        top: 0.6vw;
+        right: 25.3vw;
       }
       @media (max-width: 500px) {
         top: 2.7vw;
@@ -75,9 +75,9 @@
 
 
       &--email {
-        right: 10.7vw;
+        right: 18.4vw;
         @media (max-width: 897px) {
-          right: 22.7vw;
+          right: 24.8vw;
         }
         @media (max-width: 500px) {
           right: 60vw;
@@ -85,9 +85,9 @@
       }
 
       &--phone {
-        right: 9.6vw;
+        right: 16.7vw;
         @media (max-width: 897px) {
-          right: 20.3vw;
+          right: 23.1vw;
         }
         @media (max-width: 500px) {
           right: 55.5vw;
@@ -99,7 +99,7 @@
 
   .feedback-input {
     height: 25%;
-    width: 17.1vw;
+    width: 27vw;
     border-radius: 18px;
     border: solid 1px #000;
     margin-bottom: 1.2%;
@@ -108,11 +108,12 @@
     &--message {
       height: 58%;
       align-self: start;
-      padding-top: 0.6vw;
+      padding-top: 0.8vw;
     }
 
     &::placeholder {
-      padding-left: 1vw;
+      font-size: 1.32vw;
+      padding-left: 1.2vw;
       color: #444444;
       position: relative;
 
@@ -125,6 +126,7 @@
     }
 
     @media (max-width: 897px) {
+      border-radius: 18px;
       width: 34vw;
       height: 4.5vw;
       margin-bottom: 1vw;
@@ -151,16 +153,14 @@
         }
       }
     }
-
-
   }
 
   .address-data-block {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 9vh;
-    margin-bottom: 4vh;
+    margin-bottom:  4vw;
+    letter-spacing: 0.4px;
     @media (max-width: 897px) {
       height: 9vw;
       margin-bottom: 9.1vw;
@@ -183,6 +183,7 @@
     }
     .address-data-text {
       width: 62%;
+      letter-spacing: -0.2px;
       @media (max-width: 897px) {
         width: 63.5%;
         font-size: 1.6vw;
@@ -209,7 +210,7 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 2vh;
+    margin-bottom: 3.4vw;
 
     @media (max-width: 897px) {
       margin-bottom: 4.8vw;
@@ -231,7 +232,7 @@
     }
 
     .bank-data-text {
-      font-size: 1vw;
+      font-size: 1.5vw;
       letter-spacing: -0.3px;
       width: 62%;
 
@@ -259,11 +260,12 @@
 
   h2 {
     margin-top: 0;
-    font-size: 1.2vw;
+    font-size: 1.88vw;
     color: #444444;
-    margin-bottom: 1.1vh;
+    margin-bottom: 1.4vw;
     letter-spacing: 0.4px;
     @media (max-width: 897px) {
+      margin-top: 0;
       margin-bottom: 1.8vw;
       letter-spacing: -0.3px;
       font-size: 2.45vw;
@@ -277,11 +279,15 @@
     }
   }
 
+  .feedback-header {
+    margin-bottom: 1.1vw;
+  }
   p {
     margin-top: 0;
-    margin-bottom: 0.8vh;
-    line-height: 1.2vw;
+    margin-bottom: 2.3vw;
+    line-height: 1.9vw;
     @media (max-width: 897px) {
+      margin-top: 0;
       line-height: 2.2vw;
       font-size: 1.8vw;
       letter-spacing: 0;
@@ -296,7 +302,7 @@
   }
 
   .content-block-wrapper {
-    padding: 1.8% 1% 2% 4.1%;
+    padding: 4.8% 1% 4% 4.1%;
     width: 100%;
     margin: 0 auto;
     border-radius: 20px;
@@ -315,13 +321,14 @@
 
   .content-block {
     position: relative;
-    height: 100%;
-    padding: 0.4% 28.3% 0.4% 30%;
-    font-size: 0.92vw;
-    line-height: 1.3vw;
-    letter-spacing: 0.3px;
+    height: 62vh;
+    padding: 0 18.6% 0.4% 15.6%;
+    font-size: 1.5vw;
+    line-height: 2.67vw;
+    letter-spacing: -0.3px;
 
     @media (max-width: 897px) {
+      letter-spacing: 0.3px;
       font-size: 1.79vw;
       padding: 0.3% 1.4% 1.5% 2.2%;
       line-height: 3.3vw;
@@ -380,7 +387,7 @@
     height: 1px;
     width: 100%;
     background-color: rgb(255, 255, 255, 0.3);
-    margin-bottom: 2vh;
+    margin-bottom: 3.6vw;
     @media (max-width: 897px) {
       margin-bottom: 2.4vw;
     }
@@ -392,9 +399,11 @@
 
 
 .title-block--contacts {
-  padding: 0.4vw 1.4vw 0.7vw 0.9vw;
-  font-size: 1.65vw;
+  margin-top: 9px;
+  padding: 0.8vw 1.1vw 1vw 1.1vw;
+  font-size: 2vw;
   color:white;
+  margin-bottom: 1.05vw;
   @media (max-width: 897px) {
     margin-top: 4px;
     padding: 0.7vw 1.6vw 1.2vw 1.25vw;
@@ -413,15 +422,13 @@
 }
 
 .back-to-purchase--contacts {
-  margin-top: 1.1vw;
-  padding: 13px 79.1px 13px;
+  margin-top: 2.1vw;
+  padding: 15px 128.3px 24px;
   //border-radius: 25px;
   border: none;
   outline: none;
   box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 90%);
-  //background-color: #ff8d45;
-
-  font-size: 16.8px;
+  font-size: 26px;
   letter-spacing: 2.3px;
   font-weight: bold;
   text-align: center;
