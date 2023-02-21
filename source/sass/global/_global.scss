@@ -197,7 +197,8 @@ ol {
   //margin-bottom: 0;
 
 // новая редакция...
-  padding: 13px 31px 13px;
+  //padding: 13px 31px 13px;   // px нельзя
+  padding: 1.2vw 8.3vw 1.3vw;
   border-radius: 16px;
   border: none;
   outline: none;
@@ -213,11 +214,19 @@ ol {
   @media (max-width: 897px) {
     margin-top: 1vw;
     margin-bottom: 2.5vw;
-    padding: 13px 21px 14px;
+    //padding: 13px 21px 14px; // px нельзя
+    padding: 1.5vw 2.5vw 1.6vw;
     font-size: 18px;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+    font-size: 4vw;
+    padding: 2.9vw 8.3vw 3vw;
   }
 
   &:hover {
     background-color: #FE7B28;
   }
+
+
 }

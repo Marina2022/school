@@ -106,9 +106,10 @@
     margin-top: 1%;
 
     &--message {
+      resize: none;
       height: 58%;
       align-self: start;
-      padding-top: 0.8vw;
+      padding-top: 1.3vw;
     }
 
     &::placeholder {
@@ -133,7 +134,6 @@
       margin-top: 0.3%;
       &--message {
         height: 10.6vw;
-        padding-top: 1.3vw;
       }
 
       @media (max-width: 500px) {
@@ -425,7 +425,7 @@
 .back-to-purchase--contacts {
   margin-top: 2.1vw;
   //padding: 15px 128.3px 24px;
-  padding: 1.2vw 8.3vw 1.3vw;
+  padding: 1.2vw 8.3vw 1.3vw;  // Это мой вариант хороший, унесла в глобал
   //border-radius: 25px;
   border: none;
   outline: none;
