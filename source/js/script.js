@@ -9,12 +9,9 @@ if (document.querySelector('.content-block')) {  // чтобы не вылета
 const loginBtn = document.querySelector('.auth-modal__login-btn');
 
 const loginErrorMessage = document.querySelector('.login-error-message');
-console.log(loginErrorMessage);
-console.log('привет');
 
 loginBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  alert('ha');
   loginErrorMessage.classList.toggle('show');
 
 })
