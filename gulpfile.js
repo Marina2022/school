@@ -54,7 +54,7 @@ const copyImg = () => {
 const makeWebp = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
-    .pipe(webp({ quality: 90 }))
+    //.pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"));
 };
 
@@ -115,7 +115,7 @@ export default gulp.series(
   html,
   scripts,
   copyImg,
-  makeWebp,
+  //makeWebp,
   server,
   watcher
 );
