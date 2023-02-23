@@ -4,10 +4,12 @@ if (document.querySelector('.content-block')) {  // чтобы не вылета
     wheelPropagation: true,
     minScrollbarLength: 100,
   });
+  if (document.querySelector('.content-block--no-scroll')) {  //
+    ps.destroy();
+  }
 }
 
 const loginBtn = document.querySelector('.auth-modal__login-btn');
-
 const loginErrorMessage = document.querySelector('.login-error-message');
 
 loginBtn.addEventListener('click', (e) => {

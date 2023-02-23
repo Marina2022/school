@@ -1,4 +1,4 @@
-.auth-fragment-modal {
+.auth-modal {
   position: absolute;
   top: 8.2vw;
   left: 29.3vw;
@@ -8,7 +8,6 @@
   border-radius: 15px;
   background-color: rgb(197, 226, 167, .75);
   box-shadow: 0 1px 3px #757252;
-
   @include t {
     top: 3.5vw;
     left: 26.1vw;
@@ -58,7 +57,7 @@
     background-size: contain;
     opacity: 0.7;
 
-    &:hover, &:focus {
+    &:hover {
       opacity: 1;
     }
 
@@ -136,7 +135,7 @@
     width: 50%;
     cursor: pointer;
 
-    &:hover, &:focus {
+    &:hover {
       z-index: 0;
       box-shadow: 0 0 10px 10px rgb(243, 239, 192, .6);
     }
@@ -232,11 +231,23 @@
   }
 
   .modal-input {
+    text-align: center;
     width: 100%;
-    padding: 1.39vw 1vw 0.7vw 1vw;
+    padding: 0.89vw 3vw 0.7vw 3vw;
     border-radius: 33px;
     border: solid 0.2px #000;
     background-color: #efffff;
+    font-size: 1.5vw;
+
+    &--password {
+      letter-spacing: 3px;
+    }
+
+    &:focus {
+      &::placeholder {
+        color: transparent;
+      }
+    }
 
     &::placeholder {
       font-weight: bold;
@@ -254,10 +265,12 @@
     }
 
     @include t {
-      padding: 0.89vw 1vw 0.6vw 1vw;
+      padding: 0.89vw 3vw 0.6vw 3vw;
     }
     @include m {
-      padding: 1.9vw 1vw 1.4vw 1vw;
+      font-size: 2.75vw;
+      padding: 2vw 4vw 1.4vw;
+      padding: 2.2vw 4vw 1.2vw;
     }
   }
 
@@ -305,7 +318,24 @@
       width: 23.2vw;
     }
   }
+}
+
+.auth-modal--on-text-pages {
+  top: 5vw;
+  left: 37.3vw;
+  @include t {
+    top: 15.2vw;
+    left: 25.9vw;
+  }
+  @include m {
+    top: 46px;
+    left: 3.4vw;
+    width: 93.2%;
+
+  }
 
 }
 
-
+.content-block--no-scroll {
+  overflow: hidden;
+}
