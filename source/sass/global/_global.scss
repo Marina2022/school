@@ -193,20 +193,8 @@ ol {
 }
 
 .action-btn {
-  //padding: 18px 31px 20px;;
-  //border-radius: 25px;
-  //border: none;
-  //outline: none;
-  //box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.9);
-  //background-color: #ff8d45;
-  //font-size: 28px;
-  //letter-spacing: 2.3px;
-  //font-weight: bold;
-  //text-align: center;
-  //text-shadow: 1px 2px 3px rgba(0, 0, 0, .4);
-  //color: #fff;
-  //margin-bottom: 0;
 
+  text-shadow: 0px 1.5px 0.5px #ba632b, 0px -1.5px 0.5px #fec59f, 1.5px 0px 0.5px #df996d, -1.5px 0px 0.5px #df996d;
 // новая редакция...
   //padding: 13px 31px 13px;   // px нельзя
   padding: 1.2vw 8.3vw 1.3vw;
@@ -215,7 +203,6 @@ ol {
   outline: none;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.9);
   background-color: #FFAA74;
-  //font-size: 22px;
   font-size: 1.4vw;
   letter-spacing: 2.3px;
   font-weight: bold;
@@ -237,7 +224,9 @@ ol {
 
   &:hover {
     background-color: #FE7B28;
+    text-shadow: 0px 1.5px 0.5px #ab5e2a, 0px -1.5px 0.5px #ffaf7a, 1.5px 0px 0.5px #d68452, -1.5px 0px 0.5px #d68452;
   }
 
 
 }
+

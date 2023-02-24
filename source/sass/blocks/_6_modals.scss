@@ -65,7 +65,6 @@
       height: 3.8vw;
       width: 3.8vw;
     }
-
   }
 
   .modal-step {
@@ -74,9 +73,11 @@
     margin-right: 4.6vw;
     font-size: 1.6vw;
     color: rgba(0, 0, 0, 0.7);
+
     @include t {
       opacity: 0;
     }
+
     @include m {
       opacity: 1;
       margin-top: 0.4vw;
@@ -91,10 +92,12 @@
     font-size: 2.5vw;
     padding-left: 1vw;
     text-align: center;
+
     @include t {
       font-size: 2.9vw;
       padding-left: 0.5vw;
     }
+
     @include m {
       font-size: 4.7vw;
       margin-top: 0.1vw;
@@ -141,7 +144,8 @@
     }
 
     @include t {
-      padding: 1.2vw 0vw 1.4vw 0.6vw;
+      //padding: 1.5vw 0vw 1.4vw 0.6vw;
+      padding: 1.5vw 0vw 1.2vw 0.6vw;
       border-radius: 13px;
     }
     @include m {
@@ -208,6 +212,9 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 0.4vw;
+    @include t {
+      margin-top: 0.7vw;
+    }
     @include m {
       margin-top: 1.3vw;
     }
@@ -244,6 +251,8 @@
     }
 
     &:focus {
+      outline: none;
+
       &::placeholder {
         color: transparent;
       }
@@ -261,16 +270,18 @@
       @include m {
         font-size: 2.75vw;
         letter-spacing: 0.4px;
+        border-radius: 10px;
       }
     }
 
     @include t {
-      padding: 0.89vw 3vw 0.6vw 3vw;
+      font-size: 1.8vw;
+      //padding: 0.89vw 3vw 0.6vw 3vw;
+      padding: 1vw 3vw 0.6vw 3vw;
     }
     @include m {
-      font-size: 2.75vw;
-      padding: 2vw 4vw 1.4vw;
-      padding: 2.2vw 4vw 1.2vw;
+      font-size: 3.2vw;
+      padding: 1.6vw 4vw 1.5vw;
     }
   }
 
@@ -289,7 +300,7 @@
       left: -11.8vw;
     }
     @include m {
-      bottom: 13vw;
+      bottom: 14vw;
       font-size: 2.8vw;
       left: -12.9vw;
       width: 93.2vw;
@@ -306,18 +317,24 @@
     padding: 1.2vw 5.7vw 1.3vw;
 
     @include t {
-      margin-top: 5vw;
+      font-size: 2vw;
+      margin-top: 4.3vw;
       margin-left: 9vw;
       padding: 1.4vw 4.5vw 1.6vw;
+      border-radius: 11px;
     }
 
     @include m {
       margin-top: 7.2vw;
       margin-left: 19.7vw;
-      padding: 2vw 4.5vw 2vw;
+      padding: 2.5vw 4.5vw 2.4vw;
       width: 23.2vw;
+      border-radius: 11px;
+      font-size: 4vw;
     }
   }
+
+
 }
 
 .auth-modal--on-text-pages {
@@ -331,11 +348,240 @@
     top: 46px;
     left: 3.4vw;
     width: 93.2%;
-
   }
-
 }
 
 .content-block--no-scroll {
   overflow: hidden;
 }
+
+
+// для формы Продолжить: -->
+.auth-modal--continue .continue-reg {
+  border-radius: 23px;
+  background-color: rgb(239, 255, 255, 0.5);
+  color: #000;
+  text-align: center;
+  margin: 12.2vw 3.5vw 3vw;
+  padding: 1.5vw 1.3vw 1.3vw 1.8vw;
+  font-size: 2.3vw;
+  @include t {
+    text-align: center;
+    font-size: 2.66vw;
+    margin: 15vw 3.5vw 3vw;
+    border-radius: 20px;
+    padding: 1.7vw 4vw 2.2vw 2.7vw;
+  }
+  @include m {
+    font-size: 3.73vw;
+    margin: 26vw 5.9vw 3vw;
+    border-radius: 12.2px;
+    padding: 6vw 4vw 8.1vw 4.3vw;
+  }
+}
+
+
+// для формы регистрации:  -->
+.auth-modal--reg .auth-modal__reg-btn {
+  font-size: 1.7vw;
+  margin-left: 5.9vw;
+  padding: 1.5vw 1.9vw 1.4vw 1.8vw;
+  border-radius: 22px;
+
+  @include t {
+    font-size: 1.9vw;
+    margin-top: 1vw;
+    margin-left: 7vw;
+    border-radius: 11px;
+  }
+
+  @include m {
+    border-radius: 11px;
+    margin-left: 10.6vw;
+    padding: 3.2vw 3.7vw 3.2vw 3.9vw;
+    font-size: 4.1vw;
+    width: auto;
+  }
+}
+
+.auth-modal--reg .modal-title {
+  color: #000;
+  text-align: center;
+  margin-top: 1.4vw;
+  font-size: 2.6vw;
+  padding-left: 0px;
+  @include t {
+    font-size: 2.9vw;
+    margin-top: 1.8vw;
+  }
+  @include m {
+    font-size: 4.7vw;
+    margin-top: 0.1vw;
+  }
+}
+
+.auth-modal--reg .modal-reg-buttons-wrapper {
+  padding: 1.8vw 10vw 1.7vw;
+
+  @include t {
+    padding: 1.9vw 11.1vw 1.7vw;
+  }
+
+  @include m {
+    padding: 4.2vw 11.1vw 9.5vw;
+  }
+}
+
+.auth-modal--reg .modal-auth-form {
+  width: 29.3vw;
+  padding-left: 0;
+
+  @include t {
+    padding-left: 0;
+    width: 33.6vw;
+  }
+  @include m {
+    width: 62.6vw;
+  }
+}
+
+.auth-modal--reg .modal-input {
+  margin-bottom: 2.5vw;
+  padding: 0.8vw 3vw 0.7vw 3vw;
+  border-right: 12px;
+  border-radius: 33px;
+  @include t {
+    font-size: 1.8vw;
+    padding: 0.8vw 3vw 0.9vw 3vw;
+    margin-bottom: 2.1vw;
+    border-radius: 12px;
+  }
+
+  @include m {
+
+    padding: 1.7vw 3vw 1.6vw 3vw;
+    margin-bottom: 8.6vw;
+    font-size: 3.2vw;
+  }
+}
+
+.auth-modal--reg .modal-auth-btn {
+  padding: 1.3vw 0vw 0.9vw 0.6vw;
+
+  @include t {
+    padding: 1.5vw 0vw 1.4vw 0.6vw;
+  }
+
+  @include m {
+    padding: 2.4vw 0vw 2.2vw 0.6vw;
+  }
+}
+
+.auth-modal--reg .modal-email-label {
+
+  @include m {
+    font-size: 3.63vw;
+  }
+}
+
+
+.auth-modal--reg .auth-modal--reg {
+  font-size: 1.9vw;
+}
+
+//  --> для формы регистрации
+
+//  для формы Восстановить пароль -->
+
+.auth-modal {
+  .modal-title--restore {
+    margin-top: 6.2vw;
+    padding-left: 0vw;
+    margin-bottom: 2.3vw;
+
+    @include t {
+      margin-top: 7.4vw;
+      font-size: 2.9vw;
+      margin-bottom: 2.5vw;
+    }
+    @include m {
+      margin-left: -1.6vw;
+      font-size: 5.8vw;
+      margin-top: 10.4vw;
+      margin-bottom: 5.2vw;
+    }
+  }
+
+  .auth-modal__restore-btn {
+    font-size: 1.8vw;
+    margin-left: 4.9vw;
+    padding: 1.4vw 1.4vw 1.1vw;
+
+    @include t {
+      border-radius: 10px;
+      font-size: 1.9vw;
+      margin-top: 0.6vw;
+      margin-left: 5.2vw;
+      padding: 1.4vw 2.1vw 1.6vw;
+    }
+
+    @include m {
+      margin-left: 11.5vw;
+      padding: 2.8vw 3.1vw 3vw 3.9vw;
+      font-size: 3.9vw;
+      width: auto;
+    }
+  }
+
+  .modal-auth-form--restore {
+    padding-left: 0.7vw;
+    width: 30vw;
+    @include t {
+      padding-left: 0;
+      width: 33.6vw;
+    }
+    @include m {
+      padding-right: 1.3vw;
+      width: 69.4vw;
+    }
+  }
+
+  .modal-input--restore {
+    margin-bottom: 3vw;
+    padding: 0.89vw 3vw 0.7vw 3vw;
+
+    &:focus {
+      outline: none;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+
+    &::placeholder {
+      font-weight: bold;
+      color: #000;
+      font-size: 1.5vw;
+      text-align: center;
+      letter-spacing: -0.3px;
+      @include t {
+        letter-spacing: 0.4px;
+      }
+      @include m {
+        font-size: 2.75vw;
+        letter-spacing: 1px;
+      }
+    }
+
+    @include t {
+      padding: 1.29vw 3vw 0.8vw 3vw
+    }
+    @include m {
+      font-size: 3.2vw;
+      padding: 2.4vw 4vw 1.7vw;
+      margin-bottom: 7.2vw;
+    }
+  }
+}
+
+//  --> для формы Восстановить пароль

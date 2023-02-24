@@ -22,7 +22,7 @@ export const clean = () => {
 const scripts = () => {
   return gulp
     .src("source/js/**/*.js")
-    //.pipe(terser())  // минимизация JS
+    //.pipe(terser())  // минификатор js
     .pipe(gulp.dest("build/js"))
     .pipe(browser.stream());
 };
