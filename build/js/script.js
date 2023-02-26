@@ -1,1 +1,0 @@
-const ps=new PerfectScrollbar(".content-block",{wheelSpeed:2,wheelPropagation:!0,minScrollbarLength:100});
